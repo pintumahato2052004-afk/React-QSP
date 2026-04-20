@@ -1,0 +1,17 @@
+{
+  "users": [
+    {
+      "username": "Pintu kumar11",
+      "email": "pintu@gmail.com",
+      "password": "134",
+      "id": "3FLuHLc_HFE"
+    },
+    {
+      "username": "Ritesh kumar",
+      "email": "ritesh@gmail.com",
+      "password": "454545",
+      "id": "SNb346LjgGQ"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

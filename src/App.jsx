@@ -21,8 +21,26 @@ import TodoContextProvider from "./TodoApp/ContextProvider";
 import ReactCss from "./AllTopics/09_ReactCss/ReactCss";
 import TailwindPractice from "./AllTopics/10_TailwindCss/TailwindPractice";
 import UncntrolledForm from "./AllTopics/08_Forms/UncntrolledForm";
+import LifeCycleCbc from "./AllTopics/11_LifeCycle/LifeCycleCbc";
+import { useState } from "react";
+import LifeCycleInFbc from "./AllTopics/11_LifeCycle/LifeCycleInFbc";
+import Todos from "./AllTopics/12_Fetch/Todos";
+import ReducerCounter from "./AllTopics/13_Reducer/ReducerCounter";
+import ReducerTodo from "./AllTopics/13_Reducer/ReducerTodo";
+import Users from "./AllTopics/14_CustumHook/Users";
+import MemoExample from "./AllTopics/15_Memo/MemoExample";
+import Dashboard from "./AllTopics/16_Routing/Dashboard";
+import Routing2 from "./AllTopics/16_Routing/Routing2";
+import ParentHOC from "./AllTopics/17_HOC/ParentHOC";
+import ReduxCounter from "./AllTopics/18_Redux/ReduxCounter";
+import VirtualisedList from "./AllTopics/19_Virtualization/VirtualisedList";
+import CrudApp from "./AllTopics/20_CrudApp/CrudApp";
 
 const App = () => {
+
+  const[toggle, setToggle] = useState(false);
+  const handleToggle = () => setToggle((prev) => !prev);
+
   return (
     <>
       {/* <FunctionBased /> */}
@@ -55,7 +73,34 @@ const App = () => {
 
       {/* <ReactCss /> */}
       {/* <TailwindPractice/>  */}
-      <UncntrolledForm/>
+      {/* <UncntrolledForm/> */}
+
+      {/* <button onClick={handleToggle}>toggle me</button>
+      {toggle && <LifeCycleCbc/>} */}
+
+      {/* <LifeCycleInFbc/> */}
+
+      {/* <Todos/> */}
+      
+      {/* <ReducerCounter/> */}
+      {/* <ReducerTodo /> */}
+
+      {/* <Users/> */}
+      {/* <MemoExample /> */}
+
+      {/* <Dashboard /> */}
+
+      {/* <Routing2 /> */}
+
+      {/* <ParentHOC /> */}
+
+      {/* <ReducerCounter /> */}
+      {/* <ReduxCounter/> */}
+
+      {/* <VirtualisedList /> */}
+      
+      <CrudApp />
+      
     </>
   );
 };

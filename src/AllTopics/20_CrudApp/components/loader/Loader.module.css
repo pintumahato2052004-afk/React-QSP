@@ -1,0 +1,16 @@
+.loader{
+    height: 80px;
+    width: 80px;
+    border: 8px solid gainsboro;
+    border-top: 8px solid gray;
+    border-radius: 50%;
+    animation-name: spinner;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes spinner {
+    to{
+        transform: rotate(360deg);
+    }
+}
